@@ -3,7 +3,7 @@ This is a repository of scripts to help with playing Python AIs in MegaMinerAI, 
 
 [SIG-Game's Website](http://siggame.io/)
 
-# Brief Overview of the AI
+## About the AI (not these tools)
 ### File Structure of the AI
 The standard AI distribution can be found at [https://github.com/siggame/Cadre](https://github.com/siggame/Cadre).  Cadre is the main folder of the AI.  A simple version of the file structure looks like
 > /Cadre<br>
@@ -24,7 +24,7 @@ Where `[Joueur Folder]` is the name of your programming language's Joueur folder
 
 After writing code in your AI, you may need to build your code.  In languages like C++, you will have to run a Makefile builld it.  In Python, we can skip building code since it is interpreted on the fly.
 
-### Playing games
+## Playing games
 Next, you will want to play a match.  Matches are play 1v1.  Two AI's will run against each other, and a ***game server*** will facilitate the game in the middle.  Those two AIs will use a ***Session Name***, a string to specifically play against each other.  Since matches are 1v1, you must start two AIs on the same game server and session name for them to battle.
 
 To play your AI in a game you can use the `run` and `testRun` bash script.
@@ -32,7 +32,7 @@ To play your AI in a game you can use the `run` and `testRun` bash script.
 
 Finally, games can be visualized in the visualizer.  This allows you to actually see what went on during the game.  The console will output a link to visual a game log of the game and you can go to link to see the game visualized.  Also outputted is whether the game was won or loss.  The visualizer can also be run on your own computer.  The repository for the visualizer can be found at [https://github.com/siggame/Viseur](https://github.com/siggame/Viseur).
 
-# These MegaMinerAI tools
+## These MegaMinerAI tools
 These tools are designed to help facilitate the creation of MegaMinerAI AIs.  They are three Python scripts.  You can use them to determine which of you AIs is doing the best against the others, and in which direction you should continue your developement.
 
 Breakdown of each Python program
@@ -43,7 +43,7 @@ Breakdown of each Python program
 | RunAll.py      | Plays all AIs against all AIs (like a cross product) |
 | SimpleArena.py | Is a real time arena that graph AI performance       |
 
-### How to use them
+## How to use them
 
 To use these, you must store your AIs in this type of structure of files:
 
@@ -58,8 +58,8 @@ To use these, you must store your AIs in this type of structure of files:
 
 Where each numbered folder is a different version of your AI.
 
-At the beginning of each program it asks you several questions.<br>
-**How many matches do you want for each AI pairing?** - for each pair of AI's that the program makes, how many matches do you want it to play.
-**What is the maximum number of matches you want to run at once?** - how many games to run at once.  If this is too high, it can lock up your computer.
-**What is the name of the game server** - the game server to play the matches on.
-**What is the name of the game** - the game you want to play.
+At the beginning of each program it asks you several questions:<br>
+**How many matches do you want for each AI pairing?** - for each pair of AI's that the program makes, how many matches do you want it to play.<br>
+**What is the maximum number of matches you want to run at once?** - how many games to run at once.  If this is too high, it can lock up your computer.<br>
+**What is the name of the game server** - the game server to play the matches on.<br>
+**What is the name of the game** - the game you want to play.<br>
