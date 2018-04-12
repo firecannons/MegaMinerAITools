@@ -33,7 +33,7 @@ To play your AI in a game you can use the `run` and `testRun` bash script.
 Finally, games can be visualized in the visualizer.  This allows you to actually see what went on during the game.  The console will output a link to visual a game log of the game and you can go to link to see the game visualized.  Also outputted is whether the game was won or loss.  The visualizer can also be run on your own computer.  The repository for the visualizer can be found at [https://github.com/siggame/Viseur](https://github.com/siggame/Viseur).
 
 ## These MegaMinerAI tools
-These tools are designed to help facilitate the creation of MegaMinerAI AIs.  They are three Python scripts.  You can use them to determine which of you AIs is doing the best against the others, and in which direction you should continue your developement.
+These tools are designed to help facilitate the creation of MegaMinerAI AIs.  They are three Python scripts, written for Python 3.  You can use them to determine which of you AIs is doing the best against the others, and in which direction you should continue your developement.
 
 Breakdown of each Python program
 
@@ -42,6 +42,10 @@ Breakdown of each Python program
 | OneVsAll.py    | Plays 1 AI against all the rest                      |
 | RunAll.py      | Plays all AIs against all AIs (like a cross product) |
 | SimpleArena.py | Is a real time arena that graph AI performance       |
+
+## Required Installations
+The only dependency if matplotlib, and that is for the SimpleArena script.
+To install matplotlib, enter into the console `pip3 install matplotlib`.
 
 ## How to use them
 
@@ -63,3 +67,20 @@ At the beginning of each program it asks you several questions:<br>
 **What is the maximum number of matches you want to run at once?** - how many games to run at once.  If this is too high, it can lock up your computer.<br>
 **What is the name of the game server** - the game server to play the matches on.<br>
 **What is the name of the game** - the game you want to play.<br>
+
+## RunAll
+
+This program will run all of the numbered AIs against every other one, including itself.  It will print out statistics of the matches while it is running and output the statistics to a text file at the end of the program, named `RunAllResults.txt`.
+
+Sample usage: `python3 RunAll.py`
+
+
+## OneVsAll
+
+This program will run one numbered AI (called the juggernaut) against every other one, including itself.  It will prompt the user for the number of the AI to be the juggernaut.  It will print out statistics of the matches while it is running and output the statistics to a text file at the end of the program, named `OneVsAll.txt`.
+
+Sample usage: `python3 OneVsAll.py`
+
+## SimpleArena
+
+This continuously run AIs against each other and graph them on a graph.  It has the ability to keep an AI from playing against itself while playing the AIs against each other.  At the beginning of the program it will ask an additional question:<br>**Should AIs play against themselves?** - Whether any AI should play against itself.<br>It will also output useful information from each match it plays, such as the result and the visualizer link.
