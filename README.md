@@ -83,4 +83,19 @@ Sample usage: `python3 OneVsAll.py`
 
 ## SimpleArena
 
-This continuously run AIs against each other and graph them on a graph.  It has the ability to keep an AI from playing against itself while playing the AIs against each other.  At the beginning of the program it will ask an additional question:<br>**Should AIs play against themselves?** - Whether any AI should play against itself.<br>It will also output useful information from each match it plays, such as the result and the visualizer link.
+This continuously run AIs against each other and graph them on a graph.  It has the ability to keep an AI from playing against itself while playing the AIs against each other.  At the beginning of the program it will ask an additional question:<br>**Should AIs play against themselves?** - Whether any AI should play against itself.
+
+It will also output useful information from each match it plays, such as the result and the visualizer link.
+
+## Frequently Asked Questions (FAQs)
+
+**Can I put Cadre folders into the place of the Joueur folders in the file structure and make the tools work?**<br>
+Yes.  Simply change the `ADDED_PATH` variable in scripts like this<br>
+`ADDED_PATH = '/Cadre/Joueur.py'`<br>
+to<br>
+`ADDED_PATH = '/Joueur.py'`.
+
+**How can I change the programs to accomodate AIs other than the Python AI?**
+I'm not sure exactly but you could code after the<br>
+`ChangePath = CalcWorkingDirectory ( self . Number1 , self . Number2 , self . Oppo , self . StartingFolder )`<br>
+line in the MyClass class that runs a Makefile or a compilation command.
