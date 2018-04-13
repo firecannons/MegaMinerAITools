@@ -33,7 +33,7 @@ To play your AI in a game you can use the `run` and `testRun` bash script.
 Finally, games can be visualized in the visualizer.  This allows you to actually see what went on during the game.  The console will output a link to visual a game log of the game and you can go to link to see the game visualized.  Also outputted is whether the game was won or loss.  The visualizer can also be run on your own computer.  The repository for the visualizer can be found at [https://github.com/siggame/Viseur](https://github.com/siggame/Viseur).
 
 ## These MegaMinerAI tools
-These tools are designed to help facilitate the creation of MegaMinerAI AIs.  They are three Python scripts, written for Python 3.  You can use them to determine which of you AIs is doing the best against the others, and in which direction you should continue your developement.
+These tools are designed to help facilitate the creation of MegaMinerAI AIs.  They are three Python scripts, written for Python 3.  You can use them to determine which of you AIs is doing the best against the others, and in which direction you should continue your developement.<br>Along with these tools are 3 different Python AIs for the game Catastrophe.
 
 Breakdown of each Python program
 
