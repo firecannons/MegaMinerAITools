@@ -91,9 +91,9 @@ It will also output useful information from each match it plays, such as the res
 
 **Can I put Cadre folders into the place of the Joueur folders in the file structure and make the tools work?**<br>
 Yes.  Simply change the `ADDED_PATH` variable in scripts like this<br>
-`ADDED_PATH = '/Cadre/Joueur.py'`<br>
+`ADDED_PATH = '/Joueur.py'`<br>
 to<br>
-`ADDED_PATH = '/Joueur.py'`.
+`ADDED_PATH = '/Cadre/Joueur.py'`.
 
 **How can I change the programs to accomodate AIs other than the Python AI?**
 I'm not sure exactly but you could code after the<br>
