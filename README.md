@@ -87,6 +87,8 @@ This continuously run AIs against each other and graph them on a graph.  It has 
 
 It will also output useful information from each match it plays, such as the result and the visualizer link.
 
+Sample usage: `python3 SimpleArena.py`
+
 ## Frequently Asked Questions (FAQs)
 
 **Can I put Cadre folders into the place of the Joueur folders in the file structure and make the tools work?**<br>
